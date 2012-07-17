@@ -1,6 +1,6 @@
 Gem::Specification.new do |s| 
   s.name             = 'capistrano_rsync_with_remote_cache_and_project_root'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.has_rdoc         = true
   s.extra_rdoc_files = %w(README.rdoc)
   s.rdoc_options     = %w(--main README.rdoc)
