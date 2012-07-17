@@ -9,8 +9,8 @@ require 'capistrano/recipes/deploy/strategy/rsync_with_remote_cache'
 
 class CapistranoRsyncWithRemoteCacheTest < Test::Unit::TestCase
   
-  context "An instance of the CapistranoRsyncWithRemoteCache class" do
-    setup { @strategy = Capistrano::Deploy::Strategy::RsyncWithRemoteCache.new }
+  context "An instance of the CapistranoRsyncWithRemoteCacheAndProjectRoot class" do
+    setup { @strategy = Capistrano::Deploy::Strategy::RsyncWithRemoteCacheAndProjectRoot.new }
 
     should "know the default rsync options" do
       @strategy.rsync_options.should == '-az --delete'

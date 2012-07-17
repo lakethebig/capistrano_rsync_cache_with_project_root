@@ -3,12 +3,12 @@ require 'rake/gempackagetask'
 require 'rake/testtask'
 
 spec = Gem::Specification.new do |s|
-  s.name             = 'capistrano_rsync_with_remote_cache'
-  s.version          = '2.4.0'
+  s.name             = 'capistrano_rsync_with_remote_cache_and_porject_root'
+  s.version          = '0.1.0'
   s.has_rdoc         = true
   s.extra_rdoc_files = %w(README.rdoc)
   s.rdoc_options     = %w(--main README.rdoc)
-  s.summary          = "A deployment strategy for Capistrano 2.0 which combines rsync with a remote cache, allowing fast deployments from SCM servers behind firewalls."
+  s.summary          = "A deployment strategy for Capistrano 2.0 which combines rsync with a remote cache, allowing fast deployments from SCM servers behind firewalls. A relative path in local cache is supported."
   s.authors          = ['Patrick Reagan', 'Mark Cornick']
   s.email            = 'patrick.reagan@viget.com'
   s.homepage         = 'http://www.viget.com/extend/'
