@@ -46,7 +46,7 @@ module Capistrano
         def rsync_command_for(server)
 					local_project_path = ""
 					unless configuration[:project_root].blank?
-						local_project_path = "#{local_cache_path}/#{configuration[:projectroot]}"
+						local_project_path = "#{local_cache_path}/#{configuration[:project_root]}"
 					else
 						local_project_path = local_cache_path
 					end
